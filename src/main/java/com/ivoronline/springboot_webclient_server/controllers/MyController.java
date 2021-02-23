@@ -21,8 +21,8 @@ public class MyController {
     //CREATE PERSON
     Person person      = new Person();
            person.id   = 1;
-           person.name = "John";
-           person.age  = 20;
+           person.name = "Susan";
+           person.age  = 30;
 
     //RETURN PERSON
     return person;
@@ -38,13 +38,13 @@ public class MyController {
 
     //CREATE PERSON 1
     Person person1      = new Person();
-           person1.id   = 1;
+           person1.id   = 2;
            person1.name = "John";
-           person1.age  = 20;
+           person1.age  = 40;
 
     //CREATE PERSON 2
     Person person2      = new Person();
-           person2.id   = 2;
+           person2.id   = 3;
            person2.name = "Bill";
            person2.age  = 50;
 

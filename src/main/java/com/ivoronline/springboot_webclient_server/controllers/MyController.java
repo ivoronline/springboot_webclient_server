@@ -2,7 +2,6 @@ package com.ivoronline.springboot_webclient_server.controllers;
 
 import com.ivoronline.springboot_webclient_server.entities.Person;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +13,8 @@ public class MyController {
   // GET TEXT
   //===============================================================
   @RequestMapping("GetText")
-  String getText(@RequestParam String name) {
-    return "Hello " + name;
+  String getText() {
+    return "Hello from Controller";
   }
 
   //===============================================================
@@ -23,7 +22,7 @@ public class MyController {
   //===============================================================
   @RequestMapping("GetPerson")
   Person getPerson() {
-    return new Person(1, "Susan", 30);
+    return new Person(1, "Jill", 3);
   }
 
   //===============================================================
